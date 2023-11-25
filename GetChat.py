@@ -18,5 +18,5 @@ def getLiveData(videoId):
                                                  Data=str(data),
                                                  PartitionKey=videoId)
             
-            print(f"Record sent to Kinesis with sequence number: {response['SequenceNumber']}")
+            print(f"Record sent to Kinesis with sequence number: {response['SequenceNumber']}\n ShardId: {response['ShardId']}")
             
