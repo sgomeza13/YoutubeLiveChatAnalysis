@@ -1,3 +1,4 @@
 flask
 pytchat
 boto3
+python-dotenv

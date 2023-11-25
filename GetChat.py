@@ -14,7 +14,7 @@ def getLiveData(videoId):
                     'datetime': c.datetime,
                    'author': c.author.name,
                    'message': c.message}
-            response = kinesis_client.put_record(StreamName='LiveYTChat',
+            response = kinesis_client.put_record(StreamName='youtube_stream',
                                                  Data=str(data),
                                                  PartitionKey=videoId)
             
