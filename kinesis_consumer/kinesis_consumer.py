@@ -12,7 +12,7 @@ stream_name = os.environ['STREAM_NAME']
 shard_id = os.environ['SHARD_ID']
 starting_position = os.environ['STARTING_POSITION']
 
-kinesis_client = boto3.client('kinesis')
+kinesis_client = boto3.client('kinesis', region_name='us-east-1')
 
 def process_records(records):
     for record in records:
@@ -31,7 +31,7 @@ def my_consumer():
             records = response['Records']
 
             if not records:
-                break  # Exit the loop if there are no more records
+                break  
 
             process_records(records)
 
@@ -39,7 +39,7 @@ def my_consumer():
 
         except Exception as e:
             print(f"Error: {e}")
-            # Handle the error appropriately, e.g., back off and retry
+           
 
 if __name__ == '__main__':
     my_consumer()
