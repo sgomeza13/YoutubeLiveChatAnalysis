@@ -14,9 +14,10 @@ def getLiveData(videoId):
                     'datetime': c.datetime,
                    'author': c.author.name,
                    'message': c.message}
-            response = kinesis_client.put_record(StreamName='LiveYTChat',
+            response = kinesis_client.put_record(StreamName='youtube_stream',
                                                  Data=str(data),
                                                  PartitionKey=videoId)
             
-            print(f"Record sent to Kinesis with sequence number: {response['SequenceNumber']}")
+            # print(f"Record sent to Kinesis with sequence number: {response['SequenceNumber']}")
+            print(f"Record sent to Kinesis with sequence number: {response['SequenceNumber']}\n ShardId: {response['ShardId']}")
             
