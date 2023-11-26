@@ -33,4 +33,11 @@ Lenguaje de programacion: Python.
 Librerias : pychat, boto3, Flask, pyflink.
 
 ## 4. descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
+- Estamos usando un .env para cargar las variables de entorno
+- IP
+  - En la siguiente IP tenemos corriendo un servidor de Flask al que le podemos mandar una petición HTTP para pasarle el ID del directo de YouTube del cual queremos tener los comentarios en tiempo real. ( 52.2.10.125 )
+ 
+## 5. referencia :
+- Query your data streams in real time with kinesis data analytics studio | Amazon web services. (2021, julio 15).
+
 
