@@ -43,5 +43,5 @@ Librerias : pychat, boto3, Flask, pyflink.
 ## video sustentación: https://www.youtube.com/watch?v=yiARRCB0lA4
 
 ## 5. referencia :
-- Query your data streams in real time with kinesis data analytics studio | Amazon web services. (2021, julio 15).
+- Query your data streams in real time with kinesis data analytics studio | Amazon web services. (2021, julio 15). https://www.youtube.com/watch?v=SX_6x_wXIfA&t=1s
 
