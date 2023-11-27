@@ -38,6 +38,8 @@ Librerias : pychat, boto3, Flask, pyflink.
   - En la siguiente IP tenemos corriendo un servidor de Flask al que le podemos mandar una petición HTTP para pasarle el ID del directo de YouTube del cual queremos tener los comentarios en tiempo real. ( 52.2.10.125 )
     
  ![image](https://github.com/sgomeza13/YoutubeLiveChatAnalysis/assets/74980999/dab6e42b-8685-41d5-b021-0e5952530a94)
+ ![image](https://github.com/sgomeza13/YoutubeLiveChatAnalysis/assets/74980999/a0b4f315-1b53-466a-933b-a8bc6fd2d430)
+
 
 ## 5. referencia :
 - Query your data streams in real time with kinesis data analytics studio | Amazon web services. (2021, julio 15).
